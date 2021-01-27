@@ -37,7 +37,7 @@ public class School {
      * Adds a teacher to the school
      * @param teacher to be added
      */
-    public void addTeachers(Teacher teacher) {
+    public void addTeacher(Teacher teacher) {
         teachers.add(teacher);
     }
 

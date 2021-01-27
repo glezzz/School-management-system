@@ -26,11 +26,21 @@ public class Main {
 
         School rvs = new School(teacherList, studentList);
 
+        Teacher megan = new Teacher(6, "Megan", 1800);
+        rvs.addTeacher(megan);
+
         alex.payFees(5000);
         System.out.println("rvs has earned: $" + rvs.getTotalMoneyEarned());
         vanessa.payFees(2000);
         System.out.println("rvs has earned: $" + rvs.getTotalMoneyEarned());
 
-        System.out.println("-----MAKING RVS PAY SALARY------");
+        System.out.println("-----MAKING SCHOOL PAY SALARY------");
+        maria.receiveSalary(maria.getSalary());
+        System.out.println("rvs has spent for salary to " + maria.getName() + " and now has $" + rvs.getTotalMoneyEarned());
+
+        System.out.println(alex);
+
+        john.receiveSalary(john.getSalary());
+        System.out.println(john);
     }
 }
